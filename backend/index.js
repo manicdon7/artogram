@@ -9,7 +9,6 @@ const port = 5000;
 const Razorpay = require('razorpay');
 const admin = require('firebase-admin');
 
-app.use(cors('https://artogrampec.vercel.app/'));
 const allowedOrigins = [
   'https://artogrampec.vercel.app',
   'http://localhost:3000'
@@ -29,6 +28,7 @@ const corsOptions = {
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
 
+// app.use(cors('https://artogrampec.vercel.app/'));
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 const dburi = process.env.dbURI;

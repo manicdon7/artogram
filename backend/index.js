@@ -11,7 +11,7 @@ const admin = require('firebase-admin');
 
 app.use(cors('https://artogrampec.vercel.app/'));
 const allowedOrigins = [
-  'https://artogrampec.vercel.app/',
+  'https://artogrampec.vercel.app',
   'http://localhost:3000'
 ];
 
